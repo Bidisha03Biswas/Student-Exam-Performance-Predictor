@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 import webbrowser
+import os
 
 app = Flask(__name__)
 
@@ -61,5 +62,7 @@ def index():
 
 
 if __name__ == '__main__':
-    webbrowser.open("http://127.0.0.1:5000/")
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    # Get the port from Render environment variable, default to 5000 for local
+    port = int(os.environ.get("PORT", 5000))
+    # Do not open browser on server
+    app.run(host="0.0.0.0", port=port, debug=True)
