@@ -46,7 +46,6 @@ The final model is exposed via a **Flask web application** and deployed on **Ren
 
 
 🗂️ Project Architecture
-
 Student_Performance_Prediction/
 │
 ├── artifacts/                  # Trained model & preprocessor files
@@ -63,77 +62,92 @@ Student_Performance_Prediction/
 ├── requirements.txt            # Project dependencies
 ├── setup.py
 └── README.md
-
-
 ⚙️ Installation
 
 Clone the repository:
-	git clone https://github.com/yourusername/student-performance-prediction.git
-	cd student-performance-prediction
+
+git clone https://github.com/yourusername/student-performance-prediction.git
+cd student-performance-prediction
 
 Install dependencies:
-	pip install -r requirements.txt
 
+pip install -r requirements.txt
 ▶️ Usage
+
 Run data ingestion:
-	python src/components/data_ingestion.py
 
-2. Run data transformation:
-	python src/components/data_transformation.py
+python src/components/data_ingestion.py
 
-3. Train the model:
-	python src/components/model_trainer.py
+Run data transformation:
 
-4. Run the Flask app:
-	python app.py
+python src/components/data_transformation.py
 
-5. Open in browser:
-	http://localhost:5000
+Train the model:
 
+python src/components/model_trainer.py
 
+Run the Flask app:
 
+python app.py
+
+Open in browser:
+
+http://localhost:5000
 📊 Dataset Information
 
 The dataset includes the following features:
 
 Gender
+
 Race/Ethnicity
+
 Parental Level of Education
+
 Lunch Type
+
 Test Preparation Course
+
 Reading Score
+
 Writing Score
 
-Target Variable:
+🎯 Target Variable
 
 Math Score
-
 
 🧠 Model Training and Evaluation
 
 Data preprocessing and feature engineering
+
 Encoding categorical variables using ColumnTransformer
+
 Training multiple regression models
+
 Hyperparameter tuning using GridSearchCV
+
 Evaluation using:
-	1. R² Score
-	2. Mean Squared Error (MSE)
+
+R² Score
+
+Mean Squared Error (MSE)
 
 The best-performing model is saved and used for prediction in the deployed application.
-
 
 🚀 Deployment
 
 The application is deployed using Flask and hosted on Render.
+
 Live URL:
 👉 https://student-exam-performance-predictor-3.onrender.com
-
 
 📈 Results
 
 Built a full end-to-end ML application
+
 Achieved strong performance on unseen test data
+
 Implemented logging and custom exception handling
+
 Successfully resolved deployment and dependency issues
 
 👩‍💻 Contributors
