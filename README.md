@@ -1,67 +1,49 @@
 📚 Student Performance Prediction Project
 
-An end-to-end Machine Learning web application that predicts student academic performance (Math score) based on socio-demographic and academic factors.
+An end-to-end **Machine Learning web application** that predicts student academic performance (Math score) based on socio-demographic and academic factors.  
 The project helps identify students who may need additional academic support by leveraging data-driven insights.
 
-🔗 Live Demo (Deployed on Render):
+🔗 **Live Demo (Deployed on Render):**  
 👉 https://student-exam-performance-predictor-3.onrender.com
 
+
 📑 Table of Contents
+- Project Overview
+- Tech Stack
+- Project Architecture
+- Installation
+- Usage
+- Dataset Information
+- Model Training and Evaluation
+- Deployment
+- Results
+- Contributors
+
 
 📌 Project Overview
 
-🛠️ Tech Stack
+This project builds a complete **ML pipeline** starting from raw data ingestion to model deployment.  
+Multiple regression models are trained and evaluated to predict **student math scores** using features such as parental education, test preparation, and reading/writing scores.
 
-🗂️ Project Architecture
+The final model is exposed via a **Flask web application** and deployed on **Render**, making it accessible through a public URL.
 
-⚙️ Installation
-
-▶️ Usage
-
-📊 Dataset Information
-
-🧠 Model Training and Evaluation
-
-🚀 Deployment
-
-📈 Results
-
-👩‍💻 Contributors
-
-📌 Project Overview
-
-This project builds a complete Machine Learning pipeline, starting from raw data ingestion to model deployment.
-Multiple regression models are trained and evaluated to predict student math scores using features such as parental education, test preparation, and reading/writing scores.
-
-The final model is exposed via a Flask web application and deployed on Render, making it accessible through a public URL for real-time predictions.
 
 🛠️ Tech Stack
 
-Programming Language: Python
+- **Programming Language:** Python
+- **Libraries:** Pandas, NumPy, scikit-learn
+- **ML Models:**
+  - Linear Regression
+  - Decision Tree Regressor
+  - Random Forest Regressor
+  - Support Vector Regressor (SVR)
+  - XGBoost
+  - CatBoost
+- **Model Serialization:** dill
+- **Backend Framework:** Flask
+- **Deployment:** Render
+- **Version Control:** Git & GitHub
 
-Libraries: Pandas, NumPy, scikit-learn
-
-Machine Learning Models:
-
-Linear Regression
-
-Decision Tree Regressor
-
-Random Forest Regressor
-
-Support Vector Regressor (SVR)
-
-XGBoost
-
-CatBoost
-
-Model Serialization: dill
-
-Backend Framework: Flask
-
-Deployment Platform: Render
-
-Version Control: Git & GitHub
 
 🗂️ Project Architecture
 
@@ -82,99 +64,77 @@ Student_Performance_Prediction/
 ├── setup.py
 └── README.md
 
+
 ⚙️ Installation
 
-Follow the steps below to run the project locally.
+Clone the repository:
+	git clone https://github.com/yourusername/student-performance-prediction.git
+	cd student-performance-prediction
 
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/student-performance-prediction.git
-cd student-performance-prediction
-2️⃣ Create and Activate Virtual Environment (Optional)
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-3️⃣ Install Dependencies
-pip install -r requirements.txt
+Install dependencies:
+	pip install -r requirements.txt
+
 ▶️ Usage
-Run Data Ingestion
-python src/components/data_ingestion.py
-Run Data Transformation
-python src/components/data_transformation.py
-Train the Model
-python src/components/model_trainer.py
-Run the Flask Application
-python app.py
+Run data ingestion:
+	python src/components/data_ingestion.py
 
-Open your browser and navigate to:
+2. Run data transformation:
+	python src/components/data_transformation.py
 
-http://localhost:5000
+3. Train the model:
+	python src/components/model_trainer.py
+
+4. Run the Flask app:
+	python app.py
+
+5. Open in browser:
+	http://localhost:5000
+
+
+
 📊 Dataset Information
 
-The dataset contains information related to students’ academic background and performance.
-
-🔹 Features
+The dataset includes the following features:
 
 Gender
-
 Race/Ethnicity
-
 Parental Level of Education
-
 Lunch Type
-
 Test Preparation Course
-
 Reading Score
-
 Writing Score
 
-🎯 Target Variable
+Target Variable:
 
 Math Score
 
+
 🧠 Model Training and Evaluation
 
-The machine learning workflow includes:
-
-Data preprocessing and cleaning
-
+Data preprocessing and feature engineering
 Encoding categorical variables using ColumnTransformer
-
-Feature scaling
-
 Training multiple regression models
-
 Hyperparameter tuning using GridSearchCV
+Evaluation using:
+	1. R² Score
+	2. Mean Squared Error (MSE)
 
-Model evaluation using:
+The best-performing model is saved and used for prediction in the deployed application.
 
-R² Score
-
-Mean Squared Error (MSE)
-
-The best-performing model is serialized and used for prediction in the deployed application.
 
 🚀 Deployment
 
-Backend built using Flask
-
-Hosted on Render
-
-Publicly accessible via browser
-
-🔗 Live Application:
+The application is deployed using Flask and hosted on Render.
+Live URL:
 👉 https://student-exam-performance-predictor-3.onrender.com
 
-⚠️ Note: Render free tier may take a few seconds to wake up on the first request.
 
 📈 Results
 
-Successfully built and deployed an end-to-end ML application
-
-Achieved strong predictive performance on unseen test data
-
-Implemented robust logging and custom exception handling
-
-Solved real-world deployment challenges related to dependency versions
+Built a full end-to-end ML application
+Achieved strong performance on unseen test data
+Implemented logging and custom exception handling
+Successfully resolved deployment and dependency issues
 
 👩‍💻 Contributors
 
