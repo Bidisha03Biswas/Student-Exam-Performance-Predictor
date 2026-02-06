@@ -14,23 +14,24 @@ The project covers:
 
 ## 🗂️ Project Architecture
 
+```text
 Student_Performance_Prediction/
 │
-├── artifacts/                 # Trained model & preprocessor files
-├── notebooks/                 # EDA and experimentation notebooks
+├── artifacts/
+├── notebooks/
 ├── src/
-│   ├── components/            # Data ingestion, transformation, model training
-│   ├── pipeline/              # Training and prediction pipelines
-│   ├── utils.py               # Utility functions
-│   ├── logger.py              # Logging configuration
-│   └── exception.py           # Custom exception handling
+│   ├── components/
+│   ├── pipeline/
+│   ├── utils.py
+│   ├── logger.py
+│   └── exception.py
 │
-├── templates/                 # HTML templates (Flask)
-├── app.py                     # Flask application entry point
-├── requirements.txt           # Project dependencies
+├── templates/
+├── app.py
+├── requirements.txt
 ├── setup.py
 └── README.md
-
+```
 ## ⚙️ Installation
 
 ### 1️⃣ Clone the Repository
