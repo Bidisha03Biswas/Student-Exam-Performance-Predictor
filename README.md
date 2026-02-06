@@ -1,12 +1,19 @@
-📚 Student Performance Prediction – End-to-End ML Project
+# 📚 Student Performance Prediction – End-to-End ML Project
 
-An end-to-end Machine Learning web application that predicts student math scores based on demographic and academic factors.
-The project covers EDA → Model Training → Evaluation → Deployment using Flask.
+An end-to-end **Machine Learning web application** that predicts **student math scores** based on demographic and academic factors.
 
-🔗 Live Demo:
+The project covers:
+- Exploratory Data Analysis (EDA)
+- Model Training
+- Evaluation
+- Deployment using **Flask**
+
+🔗 **Live Demo:**  
 👉 https://student-exam-performance-predictor-3.onrender.com
 
-🗂️ Project Architecture
+
+## 🗂️ Project Architecture
+
 Student_Performance_Prediction/
 │
 ├── artifacts/                 # Trained model & preprocessor files
@@ -23,109 +30,108 @@ Student_Performance_Prediction/
 ├── requirements.txt           # Project dependencies
 ├── setup.py
 └── README.md
-⚙️ Installation
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/student-performance-prediction.git
-cd student-performance-prediction
-2️⃣ Create & Activate Environment (Optional but Recommended)
-conda create -n student_ml python=3.9 -y
-conda activate student_ml
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-▶️ Usage
-Run Data Ingestion
-python src/components/data_ingestion.py
-Run Data Transformation
-python src/components/data_transformation.py
-Train the Model
-python src/components/model_trainer.py
-Run the Flask Application
-python app.py
-Open in Browser
-http://localhost:5000
-📊 Dataset Information
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
+    git clone https://github.com/yourusername/student-performance-prediction.git
+    cd student-performance-prediction
+
+### 2️⃣ Create & Activate Environment (Optional but Recommended)
+    conda create -n student_ml python=3.9 -y
+    conda activate student_ml
+
+### 3️⃣ Install Dependencies
+    pip install -r requirements.txt
+
+
+## ▶️ Usage
+
+### Run Data Ingestion
+    python src/components/data_ingestion.py
+
+### Run Data Transformation
+    python src/components/data_transformation.py
+
+### Train the Model
+    python src/components/model_trainer.py
+
+### Run the Flask Application
+    python app.py
+
+### Open in Browser
+    http://localhost:5000
+
+
+## 📊 Dataset Information
 
 The dataset contains the following features:
 
-Gender
+- Gender  
+- Race/Ethnicity  
+- Parental Level of Education  
+- Lunch Type  
+- Test Preparation Course  
+- Reading Score  
+- Writing Score  
 
-Race/Ethnicity
+### 🎯 Target Variable
 
-Parental Level of Education
+- Math Score  
 
-Lunch Type
 
-Test Preparation Course
+## 🧠 Model Training & Evaluation
 
-Reading Score
+### 🔹 Key Steps
 
-Writing Score
+- Data preprocessing & feature engineering  
+- Categorical encoding using `ColumnTransformer`  
+- Scaling numerical features  
+- Training multiple regression models  
 
-🎯 Target Variable
+### 🔹 Models Used
 
-Math Score
+- Linear Regression  
+- Random Forest Regressor  
+- XGBoost Regressor  
+- CatBoost Regressor  
 
-🧠 Model Training & Evaluation
-🔹 Key Steps
+### 🔹 Hyperparameter Tuning
 
-Data preprocessing & feature engineering
+- GridSearchCV  
 
-Categorical encoding using ColumnTransformer
+### 🔹 Evaluation Metrics
 
-Scaling numerical features
+- R² Score  
+- Mean Squared Error (MSE)  
 
-Training multiple regression models
+✅ The best-performing model is serialized and used for real-time predictions in the deployed web application.
 
-🔹 Models Used
 
-Linear Regression
+## 🚀 Deployment
 
-Random Forest Regressor
+- **Backend:** Flask  
+- **Hosting Platform:** Render  
+- **Setup:** CI-friendly with `requirements.txt`  
 
-XGBoost Regressor
+### 🌐 Live Application
+👉 https://student-exam-performance-predictor-3.onrender.com  
 
-CatBoost Regressor
 
-🔹 Hyperparameter Tuning
+## 📈 Results & Achievements
 
-GridSearchCV
+- ✔ Built a complete end-to-end ML pipeline  
+- ✔ Deployed a production-ready Flask application  
+- ✔ Implemented logging & custom exception handling  
+- ✔ Solved real-world deployment & dependency issues  
+- ✔ Resume-ready, industry-standard project structure  
 
-🔹 Evaluation Metrics
 
-R² Score
+## 👩‍💻 Author
 
-Mean Squared Error (MSE)
+**Bidisha Biswas**  
+Aspiring Data Scientist | ML Engineer  
 
-✅ The best-performing model is serialized and used for real-time predictions in the web app.
-
-🚀 Deployment
-
-Backend: Flask
-
-Hosting Platform: Render
-
-CI-friendly setup with requirements.txt
-
-🌐 Live Application:
-👉 https://student-exam-performance-predictor-3.onrender.com
-
-📈 Results & Achievements
-
-✔ Built a complete end-to-end ML pipeline
-
-✔ Deployed a production-ready Flask app
-
-✔ Implemented logging & custom exception handling
-
-✔ Solved real-world deployment & dependency issues
-
-✔ Resume-ready, industry-style project structure
-
-👩‍💻 Author
-
-Bidisha Biswas
-Aspiring Data Scientist | ML Engineer
-
-🔗 GitHub: https://github.com/Bidisha03Biswas
-
-🔗 LinkedIn: www.linkedin.com/in/bidishabiswas03
+- 🔗 GitHub: https://github.com/Bidisha03Biswas  
+- 🔗 LinkedIn: https://www.linkedin.com/in/bidishabiswas03  
+  
